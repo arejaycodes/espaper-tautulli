@@ -360,7 +360,7 @@ void drawAstronomy() {
 void drawStreaming() {
   if((WiFi.status() == WL_CONNECTED)) {     
         HTTPClient http;
-        http.begin("http://127.0.0.1/tautulli_users.php ");  // PHP Script tautulli_users.php 
+        http.begin("http://127.0.0.1/tautulli_users.php");  // PHP Script tautulli_users.php 
         int httpCode = http.GET();
         http.setReuse(true);
         if(httpCode) {
