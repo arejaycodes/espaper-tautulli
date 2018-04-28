@@ -11,10 +11,10 @@ $bw = $data['response']['data']['total_bandwidth'];
 $tc = $data['response']['data']['stream_count_transcode'];
 $dp = $data['response']['data']['stream_count_direct_play'];
 
-$sc2 = str_replace(chr(34), chr(39), $sc); 	// Remove quotes around stream_count
-$info = array($sc2, $bw, $tc, $dp);			    // build an array
+$sc2 = str_replace(chr(34), chr(39), $sc);  // Remove quotes around stream_count
+$info = array($sc2, $bw, $tc, $dp);         // build an array
 
-echo json_encode($info);					          // Encode & display new JSON array
+echo json_encode($info);                    // Encode & display new JSON array
 
 //print $stream_count;
 //print $bw;
